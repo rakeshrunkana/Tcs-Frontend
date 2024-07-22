@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Data</title>
+    <style>
+        body{
+            font-family: calibri;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 50%;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0,  0.1);
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+        .h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+       .form-group {
+        margin-bottom: 15px;
+       }
+       .form-group label{
+        display:block;
+        text-align: left;
+        margin-bottom: 5px;
+       }
+       .form-group input,
+       .form-group select{
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+       }
+       .form-group button{
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf4c;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+       }
+       .form-group button:hover{
+        background-color: #45a049;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="Login">
+            <h2>Student Registeration Form</h2>
+            <div class="form-group">
+                <label for="FirstName">FirstName:</label>
+                <input type="text" id="first_name" name="Firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="LastName">LastName</label>
+                    <input type="text" id="last_name" name="Lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="Phone">Phone</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="Dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="Gender">Gender:</label>
+                    <select id="Gender" name="Gender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Prefer do not say">Prefer do not say</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Course">Course:</label>
+                    <select id="Course" name="Course">
+                        <option value="Computer-Science">Computer Science</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Staticstics">Staticstics</option>
+                    </select>
+                </div>
+             <div class="form-group">
+                <button type="submit">Register</button>
+             </div>
+            
+                
+                
+            </div>
+        </form>
+    </div>
+</body>
+</html>
